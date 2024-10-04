@@ -6,3 +6,20 @@
 👉 [Quick-stego](https://github.com/Esther7171/steganography/raw/main/QS12Setup.zip)
 ## Steghide (cli both for win,linux)
 👉 [Steghide](https://github.com/Esther7171/steganography/raw/main/steghide-0.5.1-win32.zip)
+
+## Embedding Data into a File
+```
+steghide embed -cf [cover file] -ef [file to embed] -sf [stego file]
+```
+* ### Example
+```
+steghide embed -cf image.jpg -ef secret.txt -sf image_with_secret.jpg
+```
+## Extracting Data from a File
+```
+steghide extract -sf [stego file]
+```
+* ### Example
+```
+steghide extract -sf image_with_secret.jpg
+```
